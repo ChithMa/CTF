@@ -1,3 +1,3 @@
 
 ## Nmap Scan
-![Nmap Scan](HackTheBox/Screenshots/flag.png)
+![Nmap Scan](Screenshots/flag.png)
