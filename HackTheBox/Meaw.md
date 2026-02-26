@@ -17,24 +17,24 @@ This indicates the machine allows remote login via Telnet.
 
 ## Initial Foothold
 Since Telnet was open, I attempted to connect:
--telnet 10.129.20.145 23
+- telnet 10.129.20.145 23
 ![Nmap Scan](Screenshots/flag.png)
 
 ## Privilege Escalation
--Method: Not required
--Reason: Direct root access via Telnet
+- Method: Not required
+- Reason: Direct root access via Telnet
 
 The Telnet service allowed direct root login, so the machine was already fully compromised.
 
 ## Flags
--User flag: N/A
--Root flag: b40abdfe23665f766f9c61ecba8a4c19
+- User flag: N/A
+- Root flag: b40abdfe23665f766f9c61ecba8a4c19
 
 ## What I Learned
--Always check all open ports carefully.
--Telnet is insecure and should not allow root login.
--Some beginner machines test basic service enumeration.
--Even a single open port can be enough to fully compromise a system.
--Try default or common usernames when services allow authentication.
+- Always check all open ports carefully.
+- Telnet is insecure and should not allow root login.
+- Some beginner machines test basic service enumeration.
+- Even a single open port can be enough to fully compromise a system.
+- Try default or common usernames when services allow authentication.
 
 
