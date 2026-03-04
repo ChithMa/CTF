@@ -145,4 +145,4 @@ Finally, navigating to the root directory revealed the final flag.
 
 ![root flag](Screenshots/madness-root-flag.png)
 
-<span style="color: red;">This text is red</span>
+
