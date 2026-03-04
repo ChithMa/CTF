@@ -39,11 +39,11 @@ the above python code run by typing "Python3 <file name>" then it gave the outpu
 http://<ip address>/th1s_1s_h1dd3n/?secret=73
 
 this gave to access and displayed the following sentance tat shows in the screenshot. and it gives a unknown letters I assumed that is a password.
-![access- to the website](TScreenshots/got-access.png)
+![access- to the website](Screenshots/got-access.png)
 
 then I tried "steghide extract -sf thm.jpg" to extract any files in the thm.jpg image and it asked for a password and I wrot that unknown word as the password and it extract a file call hidden.txt. its content shows in the following screenshot.
 
 ![steghide output txt file](Screenshots/steghide-madness-thm.png)
 
 this also has a encrypted word that is a username of something. then I decrypt this word using ROT13 and found a name call "joker" that might be the username of the ssh.
-![rot13 decript](TryHackMe/Screenshots/Madness-cybercheff-rot13.png) 
+![rot13 decript](Screenshots/Madness-cybercheff-rot13.png) 
