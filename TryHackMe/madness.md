@@ -47,3 +47,29 @@ then I tried "steghide extract -sf thm.jpg" to extract any files in the thm.jpg 
 
 this also has a encrypted word that is a username of something. then I decrypt this word using ROT13 and found a name call "joker" that might be the username of the ssh.
 ![rot13 decript](Screenshots/Madness-cybercheff-rot13.png) 
+
+Now you found the username of the ssh nd need to find the password for that. There for i save the image in the tryhackme website to the kali machine. then i tried "steghide extract -sf <file name>" command on that image also and it asked for a password and just hit enter and i extracted a txt file. that includes the password and using those credentials i logged in to the ssh by running following command. 
+"ssh joker@<ipaddress>"
+
+![ssh-password](Screenshots/madness-password-ssh.png) 
+![ssh access](Screenshots/madness-sshaccess.png)
+
+after got the user access there is a user.txt file and inside that file I found the User flag.
+
+![find exploit](Screenshots/madness-exploit.png)
+to get the root access i usded SUID. the following command shows that.
+"find / -type f -perm -4000 2>/dev/null"
+Search the entire system for regular files that have the SUID bit set, and hide any permission errors.
+
+from this i found a unknown thing call screen 4.5.0
+
+![searchsploit](Screenshots/madness-searchsploit.png)
+found the explain from the searchsploit and coppy the sh code and create a sh file in the victim mechine and paste it there.
+![sh code](Screenshots/madness-sh-code.png)
+
+then execute it and run the exploit and instantly got the root access.
+![get root access](Screenshots/madness-rootaccess.png)
+to confirm it run id and check
+
+ then move to the root directory and found the final flag.
+ ![root flag](Screenshots/madness-root-flag.png)
