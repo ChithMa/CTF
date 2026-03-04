@@ -46,4 +46,4 @@ then I tried "steghide extract -sf thm.jpg" to extract any files in the thm.jpg 
 ![steghide output txt file](Screenshots/steghide-madness-thm.png)
 
 this also has a encrypted word that is a username of something. then I decrypt this word using ROT13 and found a name call "joker" that might be the username of the ssh.
-![rot13 decript](TryHackMe/Screenshots/Madness-cybercheff-rot13.png)
+![rot13 decript](TryHackMe/Screenshots/Madness-cybercheff-rot13.png) 
