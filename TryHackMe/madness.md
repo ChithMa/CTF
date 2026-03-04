@@ -144,3 +144,5 @@ confirmed: "uid=0(root)"
 Finally, navigating to the root directory revealed the final flag.
 
 ![root flag](Screenshots/madness-root-flag.png)
+
+<font color="red">This is red</font>
