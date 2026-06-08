@@ -37,3 +37,17 @@ http://10.49.146.201/profile.php?user=guest. The page displays the message: "Hi,
 
 ![g](Screenshots/Neighbour3.png)
 Successfully logged in as the guest user, revealing the vulnerable URL parameter.
+
+
+## Step 3: Exploiting the IDOR Vulnerability to Retrieve the Flag
+
+Since the application relies entirely on the client-side URL parameter to determine which profile to fetch—and based on the comment we found in Step 1 mentioning an admin user—we can manipulate the parameter to access the restricted administrative panel.
+
+- Navigate to the URL bar.
+- Modify the user parameter from guest to admin.
+- Press Enter to request the updated URL: http://10.49.146.201/profile.php?user=admin
+
+The application fails to perform proper server-side authorization checks, granting full access to the administrator's profile and revealing the flag.
+
+![g](Screenshots/Neighbour4.png)
+Manipulating the URL parameter to 'admin' bypasses authorization and reveals the hidden flag.
