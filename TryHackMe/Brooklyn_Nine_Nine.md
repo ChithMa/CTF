@@ -1,11 +1,11 @@
-### Brooklyn Nine Nine
+# Brooklyn Nine Nine
 
 Objective: Obtain the user and root flags.
 
 ![d](Screenshots/BrooklynNineNine0.png)
 
 ## Reconnaissance & Enumeration
-# Network Scanning
+### Network Scanning
 We began by sending an ICMP request to verify the host was up, followed by a service version scan using nmap as shown in Brooklyn Nine Nine9.png:
 
 Bash
