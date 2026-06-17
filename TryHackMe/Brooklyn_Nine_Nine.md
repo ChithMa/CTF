@@ -70,8 +70,29 @@ Checking our environment, we explored the /home directory to find three user pro
 Bash:
  - cd /home/holt
  - cat user.txt
+   
+![d](Screenshots/BrooklynNineNine8.png)
 
+## 4. Privilege Escalation
+
+### Sudo Rights Exploitation
+
+To escalate to root, we checked Jake's current sudo privileges using sudo -l (Brooklyn Nine Nine3.png):
+
+Bash:
+  "sudo -l"
+  
+The output revealed an entry allowing Jake to run less with root privileges without a password:
+Plaintext
+User jake may run the following commands on brookly_nine_nine:
+    "(ALL) NOPASSWD: /usr/bin/less"
+    
+### Breaking Out of Less
+
+Using an exploitation technique from GTFOBins, we spawned an interactive shell straight from the less binary interface.
+
+Execute less on any readable system file with sudo:
 ![d](Screenshots/BrooklynNineNine6.png)
 ![d](Screenshots/BrooklynNineNine7.png)
-![d](Screenshots/BrooklynNineNine8.png)
+
 ![d](Screenshots/BrooklynNineNine9.png)
