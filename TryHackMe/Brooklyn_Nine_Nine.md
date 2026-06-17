@@ -39,6 +39,8 @@ Knowing port 21 is open, we attempted an anonymous login (anonymous:anonymous) a
 
 Reading note_to_jake.txt (Brooklyn Nine Nine6.png), we found a message from Amy warning Jake about his weak password:
 
+![d](Screenshots/BrooklynNineNine4.png)
+
 "Jake please change your password. It is too weak and holt will be mad if someone hacks into the nine nine"
 
 
@@ -52,8 +54,8 @@ Hydra successfully cracked the password in seconds:
 - Username: jake
 - Password: 987654321
 
+![d](Screenshots/BrooklynNineNine5.png)
 
-![d](Screenshots/BrooklynNineNine4.png)
 
 ## 3.Post-Exploitation & Lateral Movement
 
@@ -68,7 +70,7 @@ Checking our environment, we explored the /home directory to find three user pro
 Bash:
  - cd /home/holt
  - cat user.txt
-![d](Screenshots/BrooklynNineNine5.png)
+
 ![d](Screenshots/BrooklynNineNine6.png)
 ![d](Screenshots/BrooklynNineNine7.png)
 ![d](Screenshots/BrooklynNineNine8.png)
