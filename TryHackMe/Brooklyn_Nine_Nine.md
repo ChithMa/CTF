@@ -4,7 +4,7 @@ Objective: Obtain the user and root flags.
 
 ![d](Screenshots/BrooklynNineNine0.png)
 
-## Reconnaissance & Enumeration
+## 1.Reconnaissance & Enumeration
 ### Network Scanning
 
 We began by sending an ICMP request to verify the host was up, followed by a service version scan using nmap as shown in Brooklyn Nine Nine9.png:
@@ -27,7 +27,7 @@ Navigating to the web application on port 80, we viewed the page source as captu
 
 The page also loads a background image (brooklyn99.jpg). This indicates potential steganography vectors to extract hidden data/credentials later if needed.
 
-## Initial Access & Foothold
+## 2.Initial Access & Foothold
 
 ### FTP Anonymous Login
 
@@ -52,6 +52,20 @@ Hydra successfully cracked the password in seconds:
 
 ![d](Screenshots/BrooklynNineNine3.png)
 ![d](Screenshots/BrooklynNineNine4.png)
+
+## 3.Post-Exploitation & Lateral Movement
+
+### System Enumeration
+
+We established an SSH session using the cracked credentials (Brooklyn Nine Nine3.png)
+Bash:
+  "ssh jake@10.48.130.239"
+  
+Checking our environment, we explored the /home directory to find three user profiles: amy, holt, and jake. Navigating into /home/holt, we uncovered the first flag (Brooklyn Nine Nine2.png):
+
+Bash:
+ - cd /home/holt
+ - cat user.txt
 ![d](Screenshots/BrooklynNineNine5.png)
 ![d](Screenshots/BrooklynNineNine6.png)
 ![d](Screenshots/BrooklynNineNine7.png)
