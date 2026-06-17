@@ -95,4 +95,15 @@ Execute less on any readable system file with sudo:
 ![d](Screenshots/BrooklynNineNine6.png)
 ![d](Screenshots/BrooklynNineNine7.png)
 
+### Direct Flag Extraction via Less
+
+Knowing that the user flag was stored inside user.txt, the root flag would natively follow a matching naming convention (root.txt). Unlike the user layer which spans multiple active home profiles, there is only one root environment on a Linux machine.
+
+Therefore, the target file is expected to reside at /root/root.txt. Rather than executing a standard sub-shell breakout, we can leverage our sudo permission to call less directly against the protected file to view its contents with root-level read privileges:
+
+Bash:
+ "sudo /usr/bin/less /root/root.txt"
+ 
+This opens the file within the interactive terminal viewer, allowing us to read the administrative secret directly.
+
 ![d](Screenshots/BrooklynNineNine9.png)
