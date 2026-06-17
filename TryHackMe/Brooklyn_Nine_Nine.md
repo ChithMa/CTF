@@ -1,10 +1,10 @@
 ## Brooklyn Nine Nine
 
-![d](Screenshots/Brooklyn Nine Nine1.png)
-![d](Screenshots/Brooklyn_Nine_Nine2.png)
-![d](Screenshots/Brooklyn_Nine_Nine3.png)
-![d](Screenshots/Brooklyn_Nine_Nine4.png)
-![d](Screenshots/Brooklyn_Nine_Nine5.png)
-![d](Screenshots/Brooklyn_Nine_Nine6.png)
-![d](Screenshots/Brooklyn_Nine_Nine7.png)
-![d](Screenshots/Brooklyn_Nine_Nine8.png)
+![d](Screenshots/BrooklynNineNine1.png)
+![d](Screenshots/BrooklynNineNine2.png)
+![d](Screenshots/BrooklynNineNine3.png)
+![d](Screenshots/BrooklynNineNine4.png)
+![d](Screenshots/BrooklynNineNine5.png)
+![d](Screenshots/BrooklynNineNine6.png)
+![d](Screenshots/BrooklynNineNine7.png)
+![d](Screenshots/BrooklynNineNine8.png)
