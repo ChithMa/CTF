@@ -18,12 +18,14 @@ The scan revealed three open ports:
 - Port 22: SSH (OpenSSH 7.6p1)
 - Port 80: HTTP (Apache httpd 2.4.29)
 
+![d](Screenshots/BrooklynNineNine1.png)
+
 ### Web Footprinting
 
 Navigating to the web application on port 80, we viewed the page source as captured in Brooklyn Nine Nine8.png. A hidden HTML comment dropped a massive hint:
       "Have you ever heard of steganography?"
       
-![d](Screenshots/BrooklynNineNine1.png)
+![d](Screenshots/BrooklynNineNine2.png)
 
 The page also loads a background image (brooklyn99.jpg). This indicates potential steganography vectors to extract hidden data/credentials later if needed.
 
@@ -33,7 +35,7 @@ The page also loads a background image (brooklyn99.jpg). This indicates potentia
 
 Knowing port 21 is open, we attempted an anonymous login (anonymous:anonymous) as documented in Brooklyn Nine Nine7.png. The login was successful, exposing a note left on the server:
 
-![d](Screenshots/BrooklynNineNine2.png)
+![d](Screenshots/BrooklynNineNine3.png)
 
 Reading note_to_jake.txt (Brooklyn Nine Nine6.png), we found a message from Amy warning Jake about his weak password:
 
@@ -50,7 +52,7 @@ Hydra successfully cracked the password in seconds:
 - Username: jake
 - Password: 987654321
 
-![d](Screenshots/BrooklynNineNine3.png)
+
 ![d](Screenshots/BrooklynNineNine4.png)
 
 ## 3.Post-Exploitation & Lateral Movement
