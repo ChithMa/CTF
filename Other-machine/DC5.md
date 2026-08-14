@@ -1,2 +1,2 @@
 DC-5
-![prove](Screenshots/DC-5_1.png)
+![prove](screenshots/DC-5_1.png)
