@@ -104,7 +104,35 @@ The passwords are not stored in plaintext.
 
 Both hashes are 32 hexadecimal characters, making MD5 a likely candidate.
 
+## 4. Cracking the Password Hash
+
 ![nmap](Screenshots/Reactor-5.png)
+
+Create a file containing the hashes. Hashcat mode 0 corresponds to raw MD5.
+A larger wordlist was used:
+```bash
+hashcat -m 0 hash.txt /usr/share/wordlists/rockyou.txt
+```
+one hash was recovered
+
+## 5. SSH Access
+
+Since SSH was open on port 22, try the recovered credentials.
+The login succeeds.
+Check the current user:
+```bash
+whoami
+```
+Check the user's groups:
+```bash
+id
+```
+Output includes:
+```bash
+uid=1000(engineer)
+gid=1000(engineer)
+groups=1000(engineer),4(adm),24(cdrom),30(dip),46(plugdev),101(lxd)
+```
 ![nmap](Screenshots/Reactor-6.png)
 ![nmap](Screenshots/Reactor-7.png)
 ![nmap](Screenshots/Rwactor-8.png)
