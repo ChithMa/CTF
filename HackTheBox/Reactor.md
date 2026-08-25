@@ -59,6 +59,51 @@ The important lesson here is that seeing react-dom in JavaScript doesn't automat
 ![nmap](Screenshots/Reactor-3.png)
 
 ![nmap](Screenshots/Reactor-4.png)
+
+A database file named:
+```bash
+reactor.db
+```
+was obtained during enumeration.
+
+SQLite databases can be inspected directly using:
+
+```bash
+sqlite3 reactor.db
+```
+
+Check the available tables:
+```bash
+.tables
+```
+
+Output:
+```bash
+sensor_logs  users
+```
+The users table can be examined with:
+```bash
+.schema users
+```
+Which gives:
+```bash
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY,
+    username TEXT NOT NULL,
+    password_hash TEXT NOT NULL,
+    role TEXT NOT NULL,
+    email TEXT
+);
+```
+Now dump the records:
+```bash
+SELECT * FROM users;
+```
+The database contains with hashes
+The passwords are not stored in plaintext.
+
+Both hashes are 32 hexadecimal characters, making MD5 a likely candidate.
+
 ![nmap](Screenshots/Reactor-5.png)
 ![nmap](Screenshots/Reactor-6.png)
 ![nmap](Screenshots/Reactor-7.png)
