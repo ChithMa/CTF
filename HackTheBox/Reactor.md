@@ -17,6 +17,11 @@ nmap -sV 10.129.245.214
 ```
 
 ![nmap](Screenshots/Reactor-1.png)
+The scan reveals two interesting ports:
+```bash
+22/tcp    open    ssh
+3000/tcp  open    unknown
+```
 ![nmap](Screenshots/Reactor-2.png)
 ![nmap](Screenshots/Reactor-3.png)
 ![nmap](Screenshots/Reactor-4.png)
