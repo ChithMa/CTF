@@ -154,4 +154,8 @@ This gives the user flag.
 
 
 ![nmap](Screenshots/Reactor-7.png)
+
+## 7. Root
+Once the root Node Inspector is successfully controlled, the final privilege escalation is achieved through the root Node.js process.
+
 ![nmap](Screenshots/Rwactor-8.png)
