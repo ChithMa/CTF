@@ -54,7 +54,10 @@ This identifies the React/React-DOM version used by the application.
 
 The important lesson here is that seeing react-dom in JavaScript doesn't automatically mean that React itself is the vulnerability. It is simply one of the libraries used by the Next.js application.
 
+## 3. Finding the SQLite Database
+
 ![nmap](Screenshots/Reactor-3.png)
+
 ![nmap](Screenshots/Reactor-4.png)
 ![nmap](Screenshots/Reactor-5.png)
 ![nmap](Screenshots/Reactor-6.png)
