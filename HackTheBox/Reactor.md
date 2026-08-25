@@ -133,6 +133,25 @@ uid=1000(engineer)
 gid=1000(engineer)
 groups=1000(engineer),4(adm),24(cdrom),30(dip),46(plugdev),101(lxd)
 ```
+
+## 6. User Flag
+
 ![nmap](Screenshots/Reactor-6.png)
+
+The home directory contains:
+```bash
+ls
+```
+Output:
+```bash
+user.txt
+```
+Read the flag:
+```bash
+cat user.txt
+```
+This gives the user flag.
+
+
 ![nmap](Screenshots/Reactor-7.png)
 ![nmap](Screenshots/Rwactor-8.png)
